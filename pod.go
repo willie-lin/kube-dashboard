@@ -64,14 +64,14 @@ func main() {
 				Name: pod.Name,
 				Namespace: pod.Namespace,
 			},
-			Spec: v1.PodSpec{
-				Containers: []v1.Container{
-					{
-						Name: pod.Name,
-						Image: pod.Image,
-					},
-				},
-			},
+			//Spec: v1.PodSpec{
+			//	Containers: []v1.Container{
+			//		{
+			//			//Name: pod.Name,
+			//			//Image: pod.Image,
+			//		},
+			//	},
+			//},
 		}
 
 		// 使用Create方法创建pod
